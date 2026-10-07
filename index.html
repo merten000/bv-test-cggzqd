@@ -93,10 +93,6 @@ body {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 <style>html,body,#canvas{touch-action:none;overscroll-behavior:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}</style><script>['gesturestart','gesturechange','gestureend'].forEach(function(t){document.addEventListener(t,function(e){e.preventDefault();},{passive:false});});document.addEventListener('touchmove',function(e){if(e.touches.length>1&&e.cancelable)e.preventDefault();},{passive:false});</script>
-<!-- DIAG_TOUCH BEGIN: voruebergehende Touch-Diagnose. Zum Entfernen diesen Block loeschen. -->
-<style>#bvDiag{position:fixed;left:4px;top:64px;z-index:99999;pointer-events:none;font:11px/1.35 monospace;color:#fff;background:rgba(0,0,0,.55);padding:3px 5px;border-radius:4px;white-space:pre-wrap;max-width:calc(100vw - 8px);box-sizing:border-box}</style><script>(function(){window.BV_BUILD='4127ed8 · 07.10. 13:57';var T=0,P={},G=false,S=0,tch=[];function o(){var c=document.getElementById('canvas');return c?getComputedStyle(c).touchAction:'?';}function br(){var u=navigator.userAgent;return /CriOS/.test(u)?'Chrome iOS':/FxiOS/.test(u)?'Firefox iOS':/EdgA|Edg\//.test(u)?'Edge':/SamsungBrowser/.test(u)?'Samsung':/Firefox/.test(u)?'Firefox':/Chrome/.test(u)?'Chrome':/Safari/.test(u)?'Safari':'?';}function n(x){return String(x).replace('.',',');}function d(){var g=window.bvDiagGame,b=document.getElementById('bvDiag');if(!b){if(!document.body)return;b=document.createElement('div');b.id='bvDiag';document.body.appendChild(b);}var pc=Object.keys(P).length,vs=window.visualViewport?visualViewport.scale.toFixed(2):'?';var l1='Build '+window.BV_BUILD+' \u00b7 '+br()+' \u00b7 touch-action '+o();var l2='Browser: Finger '+T+' \u00b7 Pointer '+pc+' \u00b7 max '+S+' \u00b7 Gesten '+(G?'ja':'nein')+' \u00b7 Seitenzoom '+n(vs);var l3=g?('Spiel: Finger '+g.f+(g.ids?' (IDs '+g.ids+')':'')+' \u00b7 Kamera '+g.cam+(g.d>=0?' \u00b7 Abstand '+g.d+' px':'')+' \u00b7 '+g.mode+' \u00b7 Zoom '+n(g.z.toFixed(2))+(g.mag||g.pan?' \u00b7 Godot-Geste '+(g.mag?'Zoom ':'')+(g.pan?'Pan':''):'')):'Spiel: l\u00e4dt \u2026';var t=l1+'\n'+l2+'\n'+l3;if(b.textContent!==t)b.textContent=t;}var O={capture:true,passive:true};['touchstart','touchmove','touchend','touchcancel'].forEach(function(t){window.addEventListener(t,function(e){T=e.touches.length;if(T>S)S=T;},O);});window.addEventListener('pointerdown',function(e){if(e.pointerType==='touch')P[e.pointerId]=1;},O);['pointerup','pointercancel'].forEach(function(t){window.addEventListener(t,function(e){delete P[e.pointerId];},O);});['gesturestart','gesturechange'].forEach(function(t){document.addEventListener(t,function(){G=true;},O);});setInterval(d,100);})();</script>
-<!-- DIAG_TOUCH END -->
-
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -115,7 +111,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":179688,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":177172,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
